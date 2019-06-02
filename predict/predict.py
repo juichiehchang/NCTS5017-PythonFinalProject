@@ -1,8 +1,6 @@
 import numpy as np
 import os
-
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-
 import keras
 
 def load_image(img_path, size):
@@ -22,11 +20,17 @@ class predictor():
             self.size = (299, 299)
         self.model = keras.models.load_model(model_path)
        
-    def predict(self, img_path):
+    def predict_from_path(self, img_path):
         
         image = load_image(img_path, self.size)
         prediction = self.model.predict(image)
-        print(prediction)
+        #print(prediction)
+        return self.categories[np.argmax(prediction)]
+
+    def predict_from_array(self, img):
+
+        image = img/255
+        prediction = self.model.predict(np.expand_dims(image, axis=0))
         return self.categories[np.argmax(prediction)]
 
 if __name__ == '__main__':
@@ -40,5 +44,5 @@ if __name__ == '__main__':
     print('\n Enter the path to the image\n')
     image_path = input().strip()
 
-    print(p.predict(image_path))
+    print(p.predict_from_path(image_path))
     
