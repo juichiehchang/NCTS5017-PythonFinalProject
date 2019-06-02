@@ -20,8 +20,10 @@ for part in parts:
                     if img.size[0] * img.size[1] > 89478485:
                         print(str(filepath) + " is too big")
                         os.remove(filepath)
+                    # Possible truncated file
+                    img.load()
                 except OSError:
-                    print(str(filepath) + " is broken")
+                    print(str(filepath) + " is broken or truncated")
                     os.remove(filepath)
                 except IndexError:
                     print(str(filepath) + " EXIF data is broken")

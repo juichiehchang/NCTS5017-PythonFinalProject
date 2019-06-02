@@ -1,5 +1,5 @@
 from time import time
-from keras.callbacks import ModelCheckpoint, TensorBoard, LearningRateScheduler
+from keras.callbacks import ModelCheckpoint, TensorBoard, LearningRateScheduler, EarlyStopping
 
 # Descreasing learning rate as epoch gets larger
 def scheduler(epochs):
@@ -25,9 +25,12 @@ def get_callbacks(weights_file):
     checkpoint = ModelCheckpoint(weights_file, monitor = 'val_acc', save_best_only = True, verbose = 1)
 
     # get tensorboard
-    tensorBoard = TensorBoard(log_dir='logs/{}'.format(time()))
+    tensorBoard = TensorBoard(log_dir='../logs/{}'.format(time()))
 
     # get learning rate
     lr = LearningRateScheduler(scheduler)
 
-    return [lr, checkpoint, tensorBoard]
+    # get early stopping
+    es = EarlyStopping(monitor = 'val_acc', patience = 3)
+    
+    return [lr, checkpoint, tensorBoard, es]

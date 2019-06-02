@@ -1,10 +1,11 @@
-# Width and height of the image
+# Width and height of the image(same as InceptionV3 input)
 WIDTH = 299
 HEIGHT = 299
 
 # PORN, HENTAI, NEURTRAl, DRAWINGS, SEXY
 NUM_CLASSES = 5
 
+# Number of images in each step
 GENERATOR_BATCH_SIZE = 32
 
 # Training rounds
