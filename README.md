@@ -4,7 +4,7 @@
 
 This is the python final project for **NCTS5017 Machine-learning** class.  
 This repository contains the *contruction* and *training* codes of the two models used for **NSFW image classification**.  
-All the	images are downloaded with scripts from	[nsfw_data_scraper](https://github.com/alexanderkim-io/nsfw_data_scraper)
+All the	images are downloaded with scripts from	[nsfw_data_scraper](https://github.com/alexanderkim-io/nsfw_data_scraper).
 
 There are a total of **210190** images after running `cleanse.py` to remove all the corrupted images (truncated, exif data error...).  
 
