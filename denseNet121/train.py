@@ -86,11 +86,11 @@ print("Start fitting")
 
 # execute fitting on main thread
 model_output = model.fit_generator(train_gen, steps_per_epoch = constants.STEPS,
-                                   epochs = 16, verbose = 1, callbacks = cb,
+                                   epochs = 20, verbose = 1, callbacks = cb,
                                    validation_data = valid_gen,
                                    validation_steps = constants.VALIDATION_STEPS,
                                    workers = 0, use_multiprocessing = True,
-                                   shuffle = True, initial_epoch = 8)
+                                   shuffle = True, initial_epoch = 0)
 
 # Save the result
 print("Save the model")

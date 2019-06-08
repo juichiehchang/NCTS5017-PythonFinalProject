@@ -90,7 +90,7 @@ model_output = model.fit_generator(train_gen, steps_per_epoch = constants.STEPS,
                                    validation_data = valid_gen,
                                    validation_steps = constants.VALIDATION_STEPS,
                                    workers = 0, use_multiprocessing = True,
-                                   shuffle = True, initial_epoch = 1)
+                                   shuffle = True, initial_epoch = 0)
 
 # Save the result
 print("Save the model")

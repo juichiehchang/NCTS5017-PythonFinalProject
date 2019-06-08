@@ -8,9 +8,6 @@ NUM_CLASSES = 5
 # Number of images in each step
 GENERATOR_BATCH_SIZE = 32
 
-# Training rounds
-EPOCHS = 32
-
 # Steps per epoch
 STEPS = 500
 

@@ -28,13 +28,11 @@ height = constants.HEIGHT
 print("Load model from previous run")
 model = load_model("../models/denseNet121." + str(width) + "x" + str(height) + ".h5")
 
-# Unlock some layers in inceptionV3
-model.trainable = False
-for layer in model.layers:
-    if(layer.name == "conv2d_56"):
-        layer.trainable = True
-    else:
-        layer.trainable = False
+# Unlock some layers in denseNet121
+for layer in model.layers[:34]:
+   layer.trainable = False
+for layer in model.layers[34:]:
+   layer.trainable = True
 
 print(model.summary())
 
@@ -62,7 +60,7 @@ model_output = model.fit_generator(train_gen, steps_per_epoch = constants.STEPS,
                                    validation_data = valid_gen,
                                    validation_steps = constants.VALIDATION_STEPS,
                                    workers = 0, use_multiprocessing = True,
-                                   shuffle = True, initial_epoch = 6)
+                                   shuffle = True, initial_epoch = 0)
 
 # Save the result
 print("Save the model")
