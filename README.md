@@ -32,6 +32,6 @@ For the training of both models. `Batch_size` is set to *32* and there are *500*
 
 ## Usage
 
-Thanks to 陳怡升 and 李志恆, we were able to contruct a **NSFW-detector** program. The program will automatically scan your screen regularly. If any NSFW image is detected, it will mess with your mouse, play the [screaming cowboy part](https://www.youtube.com/watch?v=Qcp2W1-SFt4) in *Big Enough* and automatically close the tab after 15 seconds. You can check out the example video on youtube [here](https://youtu.be/x73VKhXCJs4).
+Thanks to 陳怡升 and 李志恆, we were able to contruct a **NSFW-detector** program. The program will automatically scan your screen regularly. If any NSFW image is detected, it will mess with your mouse, play the [screaming cowboy part](https://www.youtube.com/watch?v=Qcp2W1-SFt4) in *Big Enough* and automatically close the tab after 15 seconds. You can check out the example video on youtube [here](https://www.youtube.com/watch?v=AsDYYk-qPA8&feature=youtu.be).
 
 **juichieh.chang 張睿傑**
