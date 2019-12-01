@@ -20,6 +20,8 @@ Two different models are used to build the neural networks: `InceptionV3` and `D
 
 **88%** accuracy was achieved using the `InceptionV3` model.
 
+For more details, you can check out [report](https://drive.google.com/file/d/1_Z3SNtRmvkSzBWcea4JirlJ6xHAtMnCI/view?usp=sharing) (partially in Chinese)
+
 ## Implementation
 
 - InceptionV3  
@@ -34,4 +36,6 @@ For the training of both models. `Batch_size` is set to *32* and there are *500*
 
 Thanks to 陳怡升 and 李志恆, we were able to contruct a **NSFW-detector** program. The program will automatically scan your screen regularly. If any NSFW image is detected, it will mess with your mouse, play the [screaming cowboy part](https://www.youtube.com/watch?v=Qcp2W1-SFt4) in *Big Enough* and automatically close the tab after 15 seconds. You can check out the example video on youtube [here](https://www.youtube.com/watch?v=AsDYYk-qPA8&feature=youtu.be).
 
-**juichieh.chang 張睿傑**
+**Jui-Chieh Chang 張睿傑**  
+**陳怡升**  
+**李志恆**
