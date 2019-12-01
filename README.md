@@ -22,6 +22,8 @@ Two different models are used to build the neural networks: `InceptionV3` and `D
 
 For more details, you can check out [report](https://drive.google.com/file/d/1_Z3SNtRmvkSzBWcea4JirlJ6xHAtMnCI/view?usp=sharing) (partially in Chinese)
 
+The trained models and weights are in the files [inceptionV3.299x299.h5](https://github.com/juichiehchang/NCTS5017-PythonFinalProject/tree/master/resource/inceptionV3.299x299.h5) and [weights.best_inceptionv3.299x299.hdf5](https://github.com/juichiehchang/NCTS5017-PythonFinalProject/tree/master/resource/weights.best_inceptionv3.299x299.hdf5).
+
 ## Implementation
 
 - InceptionV3  
